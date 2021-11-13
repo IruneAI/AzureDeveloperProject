@@ -9,9 +9,9 @@ class Config(object):
     BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'yUCCcrSauGpBBtw2671Lz2qYhc4p/wc3c2sx9/EmLysqQH+X7fzFOMgGFC8nICnUa+HVdEPxv6e7WxlHZOIE3g=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'cms-server-proj.database.windows.net'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'cms'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'udacity'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'cms-server-udacity.database.windows.net'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'CMS-DB'
+    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'cmsadmin'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or '@iru1234'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
